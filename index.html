@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>TutosFuun - Aprende a Crear tu Sitio Web</title>
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <header>
+
+        
+        <div class="container">
+
+
+            <div class="logo-container">
+                <img src="imágenes/header/logo.png" alt="Logo de la Empresa">
+                <p class="logo">TutosFuun</p>
+            </div>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
+
+            <nav>
+                <div class="coloruno">
+                <a href="#hero">Inicio</a>
+                </div>
+
+                <div class="colordos">
+                <a href="#somos">Quienes Somos</a>
+                </div>
+                
+                <div class="desplegable">
+                    <a href="#nuestros-tutoriales">Tutoriales</a>
+                        <div class="submenu">
+                            <a href="#nuestros-tutoriales">Aprende HTML</a>
+                            <a href="#nuestros-tutoriales">Aprende CSS</a>
+                
+                        </div>
+                </div>
+
+
+                <div class="desplegable">
+                    <a href="#caracteristicas">Descargar Programas</a>
+                        <div class="submenu">
+                        <a href="#caracteristicas">Visual Code Studio</a>
+                        </div>
+                </div>
+                <div class="desplegable">
+                    <a href="#redes">Contáctenos</a>
+                    <div class="submenu">
+                        <a href="https://www.facebook.com/profile.php?id=100053715451835"><img src="imágenes/redes sociales/facebook.png" alt="">Facebook</a>
+                        <a href="https://www.instagram.com/tutorialescss/"><img src="imágenes/redes sociales/instagram.png" alt="">Instagram</a>
+                        <a href="https://www.tiktok.com/@tutosfantasticos"><img src="imágenes/redes sociales/tiktok.png" alt="">Tik Tok</a>
+                    </div>
+                </div>
+                
+            </nav>
+        </div>
+    </header>
+
+
+    <section id="hero">
+        <video autoplay loop muted playsinline>
+            <source src="videos/fondo video/fondo1.mp4" type="video/mp4">
+            Tu navegador no admite la etiqueta de video.
+        </video>
+
+        <div class="hero-content">
+            <h1><span>Aprende HTML & CSS <br>fácil!</span></h1>
+            <button id="centered-button"><div class="boton1"><a href="#somos">¡COMENZAR!</a></div></button>
+        </div>
+
+        <div class="linea-degradada"></div>
+    </section>
+
+
+    <section id="somos">
+
+        <div class="container">
+
+            <div class="img-container2">
+               <img src="imágenes/quienes somos/html.png" alt="" id="ima1"></span>
+               <img src="imágenes/quienes somos/css.png" alt="" id="ima2"></span>
+            </div>
+
+            <div class="texto">
+
+                <h2>Somos <span class="color-acento">TutosFuun</span></h2>
+                <p>Nuestro compromiso es impulsar tu conocimiento en el emocionante mundo del desarrollo web a través de videos tutoriales especializados en HTML y CSS. Como una empresa dedicada a la educación en línea, nos enorgullecemos de ser tu compañero confiable en el viaje para dominar las bases de la creación y diseño de páginas web impresionantes y funcionales.</p>
+            </div>
+        </div>
+
+        <div class="somos">
+            <div class="anuncio">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/XZXZiSn4XQ8?si=Lb1neLTffit395zh&rel=0" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section id="nuestros-tutoriales">
+    <div class="titulont"><h2>Nuestros Tutoriales</h2></div>
+
+        <div class="contenedor-nt">
+            <div class="tutorial" onclick="window.location.href = 'indextutoriales.html'" onkeydown="handleKeyPress(event)">
+                <img id="nt1" src="imágenes/nuestros tutoriales/c4.jpg">
+                <h2>HTML</h2>
+            </div>
+            <div class="tutorial" onclick="window.location.href = 'indextutoriales.html'" onkeydown="handleKeyPress(event)">
+                <img id="nt2" src="imágenes/nuestros tutoriales/cssimg.jpg">
+                <h2>CSS</h2>
+            </div>
+            <div class="tutorial" onclick="window.location.href = 'indextutoriales.html'" onkeydown="handleKeyPress(event)">
+                <img id="nt3" src="imágenes/nuestros tutoriales/htmlycss.png">
+                <h2>HTML y CSS</h2>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    
+    <section id="caracteristicas">
+        <div class="container">
+            <div class="left-column">
+                <h2>Visual Studio Code</h2>
+                <ul>
+                    <li>Gratuito</li>
+                    <li>Altamente Personalizable</li>
+                    <li>Compatible con varios Lenguajes de Programación</li>
+                    <li>Gran Comunidad y Compatible con varias Plataformas</li>
+                </ul>
+                <button class="boton1"><a href="https://code.visualstudio.com">Descarga Aqui</a></button>
+            </div>
+            <div class="visual img">
+                <img src="imágenes/visual studio code/visualimg.png" alt="Visual Studio Code">
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="final">
+        <h2>Crea sin límites y lleva tus proyectos al siguiente nivel</h2>
+        <div class="slider">
+            <span style="--i:1;"><img src="imágenes/carrusel/c1.jpg" alt=""></span>
+            <span style="--i:2;"><img src="imágenes/carrusel/c2.jpeg" alt=""></span>
+            <span style="--i:3;"><img src="imágenes/carrusel/c3.jpeg" alt=""></span>
+            <span style="--i:4;"><img src="imágenes/carrusel/colegio.jpg" alt=""></span>
+            <span style="--i:5;"><img src="imágenes/carrusel/c5.jpeg" alt=""></span>
+        </div>
+        <button class="boton1"><a href="#nuestros-tutoriales">COMIENZA</a></button>
+    </section>
+
+    
+
+    <footer id="redes">
+        <div class="redes">
+            <a href="https://www.facebook.com/profile.php?id=100053715451835"><img src="imágenes/redes sociales/facebook.png" alt="">Facebook</a>
+            <a href="https://www.instagram.com/tutorialescss/"><img src="imágenes/redes sociales/instagram.png" alt="">Instagram</a>
+            <a href="https://www.tiktok.com/@tutosfantasticos"><img src="imágenes/redes sociales/tiktok.png" alt="">Tik Tok</a>
+        </div>
+    </footer>
+    
+
+
+<script src="script.js"></script>
+
+<script>
+    function handleKeyPress(event) {
+        if (event.key === 'Enter') {
+            event.target.click();
+        }
+    }
+</script>
+    
+</body>
+</html>
