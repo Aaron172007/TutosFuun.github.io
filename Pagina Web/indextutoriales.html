@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TutosFuun - Aprende a Crear tu Sitio Web</title>
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to bottom, #001f3f, #04072F);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Evita la barra de desplazamiento horizontal en dispositivos móviles */
+}
+
+.conten hr{
+    text-align: left;
+    margin-left: 0; /* Restablece el margen izquierdo predeterminado */
+    width: 750px;
+    border: 2px solid #245CD5; /* Borde alrededor del hr */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 0 15px 8px #020c87; /* Borde desenfocado */
+    height: 2px; /* Grosor de la línea */
+    background-color: transparent; /* Color de fondo transparente */
+    margin-top: 25px;
+}
+
+@media (max-width: 900px){
+.conten hr{
+    width: 90%;
+}
+}
+
+
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.container1 {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 100px;
+}
+.conten {
+    padding: 3rem 9% ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+}
+.conten h1 {
+    font-weight: 400;
+    font-size: 2.3rem;
+    color: #d8d8d8;
+}
+
+
+
+.conten p {
+    max-width: 45rem;
+    color: #d8d8d8;
+    font-size: 1rem;
+    margin: .5rem 0;
+    letter-spacing: .02rem;
+    font-weight: 300;    
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title1 {
+    padding: 1rem 9% ;
+    color: #d8d8d8;
+    font-weight: 300;
+    font-size: 1.5rem;}
+.video{ 
+    border: 0.15rem solid #d8d8d8;
+}
+.contvideos {
+    padding: 0 9% ;
+    margin: auto;    
+    display: grid;    
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+}
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        
+        <div class="container">
+
+
+            <div class="logo-container">
+                <img src="imágenes/header/logo.png" alt="Logo de la Empresa">
+                <p class="logo">TutosFuun</p>
+            </div>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
+
+            <nav>
+                <div class="coloruno">
+                <a href="index.html#hero">Inicio</a>
+                </div>
+
+                <div class="colordos">
+                <a href="index.html#somos">Quienes Somos</a>
+                </div>
+                
+                <div class="desplegable">
+                    <a href="index.html#nuestros-tutoriales">Tutoriales</a>
+                        <div class="submenu">
+                            <a href="index.html#nuestros-programas">Aprende HTML</a>
+                            <a href="index.html#nuestros-programas">Aprende CSS</a>
+                
+                        </div>
+                </div>
+
+
+                <div class="desplegable">
+                    <a href="index.html#caracteristicas">Descargar Programas</a>
+                        <div class="submenu">
+                        <a href="index.html#caracteristicas">Visual Code Studio</a>
+                        </div>
+                </div>
+                <div class="desplegable">
+                    <a href="index.html#redes">Contáctenos</a>
+                    <div class="submenu">
+                        <a href="https://www.facebook.com/profile.php?id=100053715451835"><img src="imágenes/redes sociales/facebook.png" alt="">Facebook</a>
+                        <a href="https://www.instagram.com/tutorialescss/"><img src="imágenes/redes sociales/instagram.png" alt="">Instagram</a>
+                        <a href="https://www.tiktok.com/@tutosfantasticos"><img src="imágenes/redes sociales/tiktok.png" alt="">Tik Tok</a>
+                    </div>
+                </div>
+                
+            </nav>
+        </div>
+
+    </header>
+
+
+    <div class="container1">
+        <div class="conten">
+            <h1><i class="fa-brands fa-youtube"></i> NUESTROS TUTORIALES</h1>
+            <p>Aprende HTML y CSS con nuestros videos tutoriales para principiantes. Desde conceptos básicos hasta proyectos reales, conviértete en un experto en desarrollo web.</p>
+            <hr>
+        </div>
+
+
+
+        <div class="grupo">
+            <h1 class="title1"><i class="fa-brands fa-html5"></i> HTML</h1>
+            <div class="contvideos">
+
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/or_Cg8OSTCM?si=0Jf2OwzqV84Ieyyn" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                    gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/k8cu9wq0tZY?si=GQUO3tAZ6QUuAhoP" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                    gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rbuYtrNUxg4?si=FTrRTBmHTu-Xs74v" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                    gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>  
+
+            </div>
+
+        </div>
+        
+
+
+        
+
+        <div class="grupo">
+            <h1 class="title1"><i class="fa-brands fa-css3-alt"></i> CSS</h1>
+            <div class="contvideos">
+
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/W6GTDfrWjXs?si=fFclu07BSPzN1DbZ" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                    gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-k-w8JpTNwA?si=DrVlL1XK8eC-zJyb" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="grupo">
+            <h1 class="title1">
+                <i class="fa-brands fa-html5"></i> HTML & CSS <i class="fa-brands fa-css3-alt"></i></h1>  
+            <div class="contvideos">
+
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ELSm-G201Ls?si=9CGoCIvxffyO3S6E" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                    gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
